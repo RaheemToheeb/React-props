@@ -9,9 +9,9 @@ let Homescreen = () => {
     <Wrap>
       <Child
         
-        day="23"
-        year="2021"
-        month="October"
+        day={new Date().toLocaleString("en-US",{day:"2-digit"})}
+       year={new Date().getFullYear()}
+       month={new Date().toLocaleString("en-US",{month: "long"})}
         course="CODELAB React Course"
         price="$50.0"
         but="Enroll Now"
@@ -19,18 +19,18 @@ let Homescreen = () => {
 
       <Child
        direc="row-reverse"
-        month="November"
-        day="24"
-        year="2021"
+        day={new Date().toLocaleString("en-US",{day:"2-digit"})}
+       year={new Date().getFullYear()}
+       month={new Date().toLocaleString("en-US",{month: "long"})}
         course="CODELAB React Course"
         price="$100.0"
         but="Enroll Now"
       />
 
       <Child
-        month="December"
-        day="25"
-        year="2021"
+        day={new Date().toLocaleString("en-US",{day:"2-digit"})}
+       year={new Date().getFullYear()}
+       month={new Date().toLocaleString("en-US",{month: "long"})}
         course="CODELAB Python Course"
         price="$100.0"
         but="Enroll Now"
